@@ -1,15 +1,10 @@
-const mongoose = require('mongoose')
+import mongoose, { Schema } from 'mongoose'
 
-module.exports = mongoose.model('Author', {
+const authorSchema = new Schema({
   name: {
     type: String,
     required: true,
   },
-  books: [
-    {
-      type: mongoose.Types.ObjectId,
-      ref: 'Book',
-      default: [],
-    },
-  ],
 })
+
+module.exports = mongoose.model('Author', authorSchema)
