@@ -1,0 +1,19 @@
+{
+  "name": "graphql-server-example",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -w index.js -w models index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jeremias Erbs <jerry@badabam.de> (http://www.badabam.de/)",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "apollo-server": "2.9.12",
+    "graphql": "14.5.8",
+    "mongoose": "5.7.12",
+    "nodemon": "2.0.1"
+  }
+}
