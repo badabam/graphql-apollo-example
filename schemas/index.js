@@ -1,6 +1,6 @@
+import { gql } from 'apollo-server'
 import authorSchema from './authorSchema'
 import bookSchema from './bookSchema'
-import { gql } from 'apollo-server'
 
 const linkSchema = gql`
   type Query {
