@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon -w index.js -w models index.js",
+    "start": "nodemon --exec babel-node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Jeremias Erbs <jerry@badabam.de> (http://www.badabam.de/)",
   "license": "UNLICENSED",
   "dependencies": {
+    "@babel/core": "7.7.4",
+    "@babel/node": "7.7.4",
+    "@babel/preset-env": "7.7.4",
+    "apollo-link-schema": "1.2.4",
     "apollo-server": "2.9.12",
     "graphql": "14.5.8",
     "mongoose": "5.7.12",

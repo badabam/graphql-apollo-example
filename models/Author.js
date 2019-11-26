@@ -9,6 +9,7 @@ module.exports = mongoose.model('Author', {
     {
       type: mongoose.Types.ObjectId,
       ref: 'Book',
+      default: [],
     },
   ],
 })

@@ -6,7 +6,7 @@ module.exports = mongoose.model('Book', {
     required: true,
   },
   author: {
-    type: mongoose.Types.ObjectId,
+    type: mongoose.Schema.Types.ObjectId,
     ref: 'Author',
   },
 })
